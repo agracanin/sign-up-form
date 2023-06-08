@@ -6,10 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
+    <main>
+        <div class="image-container">
+        </div>
+        <div class="content-container">
+            <h1>Get Started!</h1>
+            <div class="form-container">
+                <form action="">
+                    <div class="input-row">
+                        <div class="input">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname">
+                        </div>
+                        <div class="input">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="input">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="input">
+                            <label for="confirmpass">Confirm Password</label>
+                            <input type="password" name="confirmpass" id="confirmpass">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <button type="submit">Create Account</button>
+            <p class="registered">Already have an account? <a href="">Log in</a></p>
+        </div>
+    </main>
 </body>
 
 </html>
