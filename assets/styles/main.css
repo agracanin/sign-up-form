@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Norse';
-    src: url('/assets/fonts/Norse-Bold.otf');
+    src: url('../fonts/Norse-Bold.otf');
 
 }
 
@@ -32,7 +32,7 @@ main {
 .image-container {
     width: 40%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('/assets/images/diego-ph-5LOhydOtTKU-unsplash.jpg');
+        url("../images/diego-ph-5LOhydOtTKU-unsplash.jpg");
     background-size: cover;
     background-position: bottom;
     display: flex;
