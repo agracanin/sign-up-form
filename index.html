@@ -12,15 +12,20 @@
 <body>
     <main>
         <div class="image-container">
+            <div class="odin-logo">
+                <img src="assets/viking.png" alt="">
+                <h1 class="logoh1">ODIN</h1>
+            </div>
         </div>
         <div class="content-container">
-            <h1>Get Started!</h1>
+            <img src="assets/viking.png" alt="">
+            <h1 class="heading">Start your journey <span class="today">today.</span></h1>
             <div class="form-container">
                 <form action="">
                     <div class="input-row">
                         <div class="input">
                             <label for="firstname">First Name</label>
-                            <input type="text" name="firstname" id="firstname">
+                            <input type="text" name="firstname" id="firstname" minlength="3" pattern="[a-zA-Z]*">
                         </div>
                         <div class="input">
                             <label for="lastname">Last Name</label>
@@ -29,8 +34,8 @@
                     </div>
                     <div class="input-row">
                         <div class="input">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <label for="email">Email *</label>
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="input">
                             <label for="phone">Phone Number</label>
@@ -39,20 +44,23 @@
                     </div>
                     <div class="input-row">
                         <div class="input">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
+                            <label for="password">Password *</label>
+                            <input type="password" name="password" id="password" required>
+                            <span class="error" id="match-err"></span>
                         </div>
                         <div class="input">
-                            <label for="confirmpass">Confirm Password</label>
-                            <input type="password" name="confirmpass" id="confirmpass">
+                            <label for="confirmpass">Confirm Password *</label>
+                            <input type="password" name="confirmpass" id="confirmpass" required>
                         </div>
                     </div>
                 </form>
             </div>
-            <button type="submit">Create Account</button>
+            <button id="submitBtn" type="submit">Create Account</button>
             <p class="registered">Already have an account? <a href="">Log in</a></p>
         </div>
     </main>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,13 @@
     --blue: #BD4D4F;
 }
 
+@font-face {
+    font-family: 'Norse';
+    src: url('assets/Norse-Bold.otf');
+
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,14 +31,13 @@ main {
 
 .image-container {
     width: 40%;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        /* The overlay: semi-transparent black */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('assets/diego-ph-5LOhydOtTKU-unsplash.jpg');
-    /* The image */
     background-size: cover;
     background-position: bottom;
-    /* So the image covers the entire container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content-container {
@@ -41,6 +47,7 @@ main {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
 }
 
 .form-container {
@@ -48,10 +55,9 @@ main {
     display: flex;
     flex-flow: row wrap;
     padding-bottom: 30px;
-    height: 40%;
+    min-height: 40%;
     align-items: center;
     width: 90%;
-    align-self: center;
     border-radius: 10px;
 }
 
@@ -83,10 +89,10 @@ input {
     border: 2px solid linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     color: rgba(255, 255, 255, 0.7);
     height: 40px;
+    text-indent: 5px;
 }
 
 button {
-    align-self: center;
     margin-top: 50px;
     padding: 10px;
     width: 40%;
@@ -96,10 +102,10 @@ button {
     border-radius: 10px;
     border: 2px solid linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 p {
-    align-self: center;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -107,9 +113,79 @@ a {
     color: #BD4D4F;
 }
 
-h1 {
-    text-align: center;
-    color: #BD4D4F;
-    margin-bottom: 50px;
+.heading {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+    margin-top: 10px;
     font-size: 3em;
+}
+
+.odin-logo {
+    display: flex;
+    position: relative;
+    background-color: var(--black);
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    top: -10%;
+}
+
+.logoh1 {
+    font-family: 'Norse', fallback, sans-serif;
+    font-size: 8em;
+    color: #BD4D4F;
+}
+
+button:hover {
+    opacity: 50%;
+    transition: 0.5s;
+}
+
+.today {
+    color: #BD4D4F;
+}
+
+span.error {
+    color: #BD4D4F;
+    font-size: 0.8em;
+    text-transform: none;
+    padding-top: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 960px) {
+    .image-container {
+        display: none;
+    }
+
+    body,
+    main {
+        height: 150vh;
+    }
+
+    .content-container {
+        width: 100%;
+        min-height: 100vh;
+        max-height: 200vh;
+    }
+
+    .form-container {
+        flex-flow: column wrap;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.input-row {
+        justify-content: center;
+        flex-direction: column;
+    }
 }
