@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Norse';
-    src: url('assets/Norse-Bold.otf');
+    src: url('/assets/fonts/Norse-Bold.otf');
 
 }
 
@@ -32,7 +32,7 @@ main {
 .image-container {
     width: 40%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('assets/diego-ph-5LOhydOtTKU-unsplash.jpg');
+        url('/assets/images/diego-ph-5LOhydOtTKU-unsplash.jpg');
     background-size: cover;
     background-position: bottom;
     display: flex;
@@ -157,6 +157,20 @@ input:focus {
     border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
+span.required {
+    color: #BD4D4F;
+}
+
+.empty {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.error-border {
+    border: 2px solid #BD4D4F;
+}
+
 @media screen and (max-width: 960px) {
     .image-container {
         display: none;
@@ -164,28 +178,40 @@ input:focus {
 
     body,
     main {
-        height: 150vh;
+        height: 125vh;
     }
 
     .content-container {
         width: 100%;
         min-height: 100vh;
-        max-height: 200vh;
+        max-height: 125vh;
+        justify-content: flex-start;
+        padding-top: 25px;
     }
 
     .form-container {
         flex-flow: column wrap;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 90%;
     }
 
     div.input-row {
         justify-content: center;
         flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    div.input {
+        width: 90%;
+    }
+
+    .heading {
+        font-size: 1.5em;
+        padding-bottom: 25px;
+    }
+
+    button {
+        width: 90%;
+        margin-top: 25px;
     }
 }
