@@ -1,9 +1,7 @@
-# Sign Up Form
+# Sign Up Form | [Demo](https://agracanin.github.io/sign-up-form/)
 
 ## Overview
 This is a sign up form inspired by [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form). The user interface is built with HTML, CSS, and JavaScript. The UI design follows modern web standards and aesthetics, using flexbox for layout and custom CSS for responsive design. Javascript is used to validate the user inputs for registration.
-
-A live demo can be viewed [here](https://agracanin.github.io/sign-up-form/)
 
 ## Features
 - User registration form with email, password and confirm password fields.
